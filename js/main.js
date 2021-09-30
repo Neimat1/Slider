@@ -17,7 +17,7 @@ imgs.forEach(function(img){
         var backgroundImg = img.getAttribute('src');
         containerSliderImg.style.backgroundImage = `url(${backgroundImg})` ;
         currentIndex=imgs.indexOf(img);
-        usingKeyCode();  
+        // usingKeyCode();  
     })
 })
 
@@ -48,7 +48,7 @@ prevSlider.addEventListener('click',prevSlide);
 closeSlider.addEventListener('click',closeSlide);
 // containerSlider.addEventListener('click',closeSlide)
 
-function usingKeyCode(){
+// function usingKeyCode(){
     document.addEventListener('keydown',function(eventInfo){
         if(eventInfo.key=='ArrowRight'){
             nextSlide();
@@ -60,4 +60,4 @@ function usingKeyCode(){
             closeSlide();
         }
     })
-}
+// }
